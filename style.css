@@ -1,5 +1,31 @@
 @charset "UTF-8"
-
+body {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+    " nav nav nav nav"
+    ". header header ."
+    ". main main aside"
+    "footer footer footer footer";
+}
 nav {
-    display: flex;
+    background-color: blue;
+    grid-area: nav;
+}
+header {
+    background-color: brown;
+    grid-area: header;
+}
+main {
+    background-color: chartreuse;
+    grid-area: main;
+}
+aside {
+    background-color: cyan;
+    grid-area: aside;
+}
+footer {
+    background-color: darkorchid;
+    grid-area: footer;
 }
