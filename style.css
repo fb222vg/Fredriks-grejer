@@ -1,8 +1,8 @@
-@charset "UTF-8"
+@charset "UTF-8";
 body {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: auto 350px 200px auto;
+    grid-template-rows: min-content 200px 500px auto;
     grid-template-areas: 
     " nav nav nav nav"
     ". header header ."
@@ -24,8 +24,60 @@ main {
 aside {
     background-color: cyan;
     grid-area: aside;
+    
 }
 footer {
     background-color: darkorchid;
     grid-area: footer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+nav a {
+    display: block;
+}
+#wrapper div {
+    border: 6px solid #333;
+    padding: 3px;
+
+}
+#wrapper {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+#N64 {
+    background-color: rgb(223, 22, 22);
+}
+#GC {
+
+}
+#Wii {
+
+}
+#Wii U {
+
+}
+#Switch {
+
+}
+#PS3 {
+
+}
+#PS4 {
+
+}
+#PSP {
+
+}
+#PSVita {
+
+}
+#övrigtSpel {
+
 }
