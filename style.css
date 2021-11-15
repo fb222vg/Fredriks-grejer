@@ -1,28 +1,29 @@
 @charset "UTF-8";
 body {
+    background-color: rgb(218, 211, 211);
     display: grid;
-    grid-template-columns: auto 350px 200px auto;
+    grid-template-columns: auto 350px 200px 250px;
     grid-template-rows: min-content 200px 500px auto;
     grid-template-areas: 
-    " nav nav nav nav"
-    ". header header ."
+    " nav nav nav ."
+    ". header header aside"
     ". main main aside"
     "footer footer footer footer";
 }
 nav {
-    background-color: blue;
+    background-color: rgb(218, 211, 211);
     grid-area: nav;
 }
 header {
-    background-color: brown;
+    background-color: rgb(218, 211, 211);
     grid-area: header;
 }
 main {
-    background-color: chartreuse;
+    background-color: rgb(218, 211, 211);
     grid-area: main;
 }
 aside {
-    background-color: cyan;
+    rgb(218, 211, 211);
     grid-area: aside;
     
 }
@@ -33,26 +34,42 @@ footer {
 
 nav ul {
     list-style: none;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+    justify-content:space-evenly;
 }
 nav a {
     display: block;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+nav a:link, nav a:visited {
+    background-color: rgb(218, 211, 211);
+    color: darkorchid;
+}
+nav a:hover, nav a:active {
+    color: darkred;
+    background-color: rgb(148, 144, 146);
 }
 #wrapper div {
-    border: 6px solid #333;
+    border: 6px solid rgb(80, 79, 79);
     padding: 3px;
+    background-color: rgb(165, 158, 155);
 
 }
 #wrapper {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 112px 112px 112px 112px 112px 112px;
     gap: 5px;
+
 }
 #N64 {
-    background-color: rgb(223, 22, 22);
+
 }
 #GC {
 
