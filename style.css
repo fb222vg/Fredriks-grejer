@@ -2,28 +2,28 @@
 body {
     background-color: rgb(218, 211, 211);
     display: grid;
-    grid-template-columns: auto 350px 200px 250px;
+    grid-template-columns: 150px 350px 200px 250px;
     grid-template-rows: min-content 200px 500px auto;
     grid-template-areas: 
-    " nav nav nav ."
+    " . nav nav ."
     ". header header aside"
     ". main main aside"
     "footer footer footer footer";
 }
 nav {
-    background-color: rgb(218, 211, 211);
+    background-color: rgb(175, 28, 28);
     grid-area: nav;
 }
 header {
-    background-color: rgb(218, 211, 211);
+    background-color: rgb(66, 88, 97);
     grid-area: header;
 }
 main {
-    background-color: rgb(218, 211, 211);
+    background-color: rgb(127, 151, 41);
     grid-area: main;
 }
 aside {
-    rgb(218, 211, 211);
+    background-color: hotpink;
     grid-area: aside;
     
 }
