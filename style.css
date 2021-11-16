@@ -13,6 +13,8 @@ body {
 nav {
     background-color: rgb(175, 28, 28);
     grid-area: nav;
+    top: 6px;
+    position: sticky;
 }
 header {
     background-color: rgb(66, 88, 97);
@@ -39,6 +41,7 @@ nav ul {
     flex-direction: row;
     gap: 0.5rem;
     justify-content:space-evenly;
+    
 }
 nav a {
     display: block;
@@ -46,6 +49,9 @@ nav a {
     padding: 7px;
     font-size: 1.2rem;
     text-align: center;
+    box-shadow: 5px 5px 15px #333;
+    
+    
 }
 nav a:link, nav a:visited {
     background-color: rgb(218, 211, 211);
@@ -56,9 +62,10 @@ nav a:hover, nav a:active {
     background-color: rgb(148, 144, 146);
 }
 #wrapper div {
-    border: 6px solid rgb(80, 79, 79);
+    border: 3px solid rgb(80, 79, 79);
     padding: 3px;
     background-color: rgb(165, 158, 155);
+    border-radius: 3px;
 
 }
 #wrapper {
