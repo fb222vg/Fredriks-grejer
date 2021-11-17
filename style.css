@@ -41,7 +41,7 @@ nav ul {
     flex-direction: row;
     gap: 0.5rem;
     justify-content:space-evenly;
-    
+    position: relative;
 }
 nav a {
     display: block;
@@ -60,6 +60,20 @@ nav a:link, nav a:visited {
 nav a:hover, nav a:active {
     color: darkred;
     background-color: rgb(148, 144, 146);
+}
+nav ul ul {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0px;
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    gap: 0.1rem;
+    
+}
+
+nav ul li:hover ul {
+    visibility: visible;
 }
 #wrapper div {
     border: 3px solid rgb(80, 79, 79);
