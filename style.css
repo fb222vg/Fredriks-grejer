@@ -105,3 +105,10 @@ nav a:hover, nav a:active {
 #övrigtSpel {
 
 }
+#gamecubeHeader {
+    background-image: url(spel/bilder/Gamecube.jpg);
+    background-position: center;
+    background-size: cover;
+   
+    
+}
